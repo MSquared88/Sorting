@@ -22,14 +22,11 @@ def selection_sort( arr ):
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
     #make a swap variable that counts how many swaps took place
-    swap = 1
+    swap = None
     while swap != 0:
-        print(swap)
         swap = 0
-        print(swap)
         #compare items to the item in the next index 
         for i in range(0, len(arr) - 1):
-            print(swap)
             #if item is smaller than neighbour swap and add 1 to swap
             if arr[i] > arr[i + 1]:
                 arr[i], arr[i + 1] = arr[i + 1], arr[i]
@@ -37,7 +34,6 @@ def bubble_sort( arr ):
 
     return arr
 
-print(bubble_sort([1, 5, 8, 4, 2, 9, 6, 0, 3, 7]))
 
 # STRETCH: implement the Count Sort function below
 def count_sort( arr, maximum=-1 ):
